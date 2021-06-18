@@ -1,4 +1,6 @@
-import  { useState } from 'react';
+import { useState } from 'react';
+import JXS from './components/classes';
+
 function App() {
   const [counter, setCounter] = useState(0)
   const increment = () => setCounter(counter + 1)
@@ -11,7 +13,9 @@ function App() {
       <h4>current count: {counter}</h4>
       <button onClick={increment}>+1</button>
       <button onClick={ decrement }>-1</button>
-      <button onClick={reset}>reset</button>
+      <button onClick={ reset }>reset</button>
+      <h2>Classes Components</h2>
+      <JXS />
     </div>
   );
 }
